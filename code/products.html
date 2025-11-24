@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Chica Wear Sweatshirts</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <header id="main-header" class="header">
+        <div class="container">
+            <h1 class="brand">Chica Wear Sweatshirts</h1>
+            <nav class="main-nav">
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html" class="active">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="products-section">
+            <div class="container">
+                <h2 class="section-title">Complete Collection</h2>
+                <div class="products-grid">
+                    
+ 
+                    <!-- SW1: Premium Hoodie -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="../Assets/images/SW1.jpg" alt="Premium fleece hoodie in brown with adjustable drawstrings and kangaroo pocket">
+                        </div>
+                        <h3>Premium Hoodie</h3>
+                        <p class="price">$150.00</p>
+                        <p style="padding: 0 20px 20px; flex-grow: 1;">Ultra-soft fleece hoodie with adjustable drawstrings and kangaroo pocket. Perfect for layering.</p>
+                        <button class="add-to-cart-btn" onclick="addToCart(1)">Add to Cart</button>
+                    </div>
+
+                    <!-- SW2: Classic Crewneck -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <<img src="../Assets/images/SW2.jpg" alt="Classic crewneck sweatshirt in cotton blend with ribbed cuffs and hem">
+                        </div>
+                        <h3>Classic Crewneck</h3>
+                        <p class="price">$140.00</p>
+                        <p style="padding: 0 20px 20px; flex-grow: 1;">Timeless crewneck design in premium cotton blend. Ribbed cuffs and hem for perfect fit.</p>
+                        <button class="add-to-cart-btn" onclick="addToCart(2)">Add to Cart</button>
+                    </div>
+
+                    <!-- SW3: Oversized Fit -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="../Assets/images/SW3.jpg" alt="Oversized sweatshirt with relaxed silhouette, drop shoulders, and wide sleeves">
+                        </div>
+                        <h3>Oversized Fit</h3>
+                        <p class="price">$135.00</p>
+                        <p style="padding: 0 20px 20px; flex-grow: 1;">Relaxed, oversized silhouette for maximum comfort. Drop shoulders and wide sleeves.</p>
+                        <button class="add-to-cart-btn" onclick="addToCart(3)">Add to Cart</button>
+                    </div>
+             
+
+                
+                    <!-- SW4: Zip-Up Hoodie -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="../Assets/images/SW4.jpg" alt="Full-zip hoodie with dual front pockets and brushed interior for warmth">
+                        </div>
+                        <h3>Zip-Up Hoodie</h3>
+                        <p class="price">$145.00</p>
+                        <p style="padding: 0 20px 20px; flex-grow: 1;">Full-zip hoodie with dual front pockets. Brushed interior for extra warmth.</p>
+                        <button class="add-to-cart-btn" onclick="addToCart(4)">Add to Cart</button>
+                    </div>
+
+
+                    <!-- SW5: Cropped Sweatshirt -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="../Assets/images/SW5.jpg" alt="Trendy cropped sweatshirt with raw edge hem, pairs with high-waist bottoms">
+                        </div>
+                        <h3>Cropped Sweatshirt</h3>
+                        <p class="price">$95.00</p>
+                        <p style="padding: 0 20px 20px; flex-grow: 1;">Trendy cropped length with raw edge hem. Pairs perfectly with high-waist bottoms.</p>
+                        <button class="add-to-cart-btn" onclick="addToCart(5)">Add to Cart</button>
+                    </div>
+
+                    <!-- SW6: Athleisure Pullover -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="../Assets/images/SW6.jpg" alt="Athleisure pullover with moisture-wicking fabric, athletic cut, and thumbhole cuffs">
+                        </div>
+                        <h3>Athleisure Pullover</h3>
+                        <p class="price">$125.00</p>
+                        <p style="padding: 0 20px 20px; flex-grow: 1;">Moisture-wicking fabric with athletic cut. Thumbholes at cuffs for added functionality.</p>
+                        <button class="add-to-cart-btn" onclick="addToCart(6)">Add to Cart</button>
+                    </div>
+
+                    <!-- SW7: Vintage Wash Hoodie -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="../Assets/images/SW7.jpg" alt="Vintage wash hoodie with distressed look and unique acid wash pattern">
+                        </div>
+                        <h3>Vintage Wash Hoodie</h3>
+                        <p class="price">$130.00</p>
+                        <p style="padding: 0 20px 20px; flex-grow: 1;">Distressed vintage look with acid wash treatment. Each piece is uniquely patterned.</p>
+                        <button class="add-to-cart-btn" onclick="addToCart(7)">Add to Cart</button>
+                    </div>
+
+                    <!-- SW8: Sherpa Lined Sweatshirt -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="../Assets/images/SW8.jpg" alt="Sherpa-lined sweatshirt with plush lining for ultimate warmth, heavyweight construction">
+                        </div>
+                        <h3>Sherpa Lined Sweatshirt</h3>
+                        <p class="price">$150.00</p>
+                        <p style="padding: 0 20px 20px; flex-grow: 1;">Plush sherpa lining throughout for ultimate warmth. Heavyweight construction.</p>
+                        <button class="add-to-cart-btn" onclick="addToCart(8)">Add to Cart</button>
+                    </div>
+
+                    <!-- SW9: Tie-Dye Crewneck -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="../Assets/images/SW9.jpg" alt="Tie-dye crewneck sweatshirt in soft cotton with unique hand-dyed spiral pattern">
+                        </div>
+                        <h3>Tie-Dye Crewneck</h3>
+                        <p class="price">$110.00</p>
+                        <p style="padding: 0 20px 20px; flex-grow: 1;">Hand-dyed spiral pattern on soft cotton. Each pattern is one-of-a-kind.</p>
+                        <button class="add-to-cart-btn" onclick="addToCart(9)">Add to Cart</button>
+                    </div>
+
+                    <!-- SW10: Graphic Print Hoodie -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="../Assets/images/SW10.jpg" alt="Hoodie with bold screen-printed graphic on back using premium inks">
+                        </div>
+                        <h3>Graphic Print Hoodie</h3>
+                        <p class="price">$120.00</p>
+                        <p style="padding: 0 20px 20px; flex-grow: 1;">Bold screen-printed graphic on back. Premium inks for long-lasting design.</p>
+                        <button class="add-to-cart-btn" onclick="addToCart(10)">Add to Cart</button>
+                    </div>
+
+                    <!-- SW11: Thermal Knit Sweater -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="../Assets/images/SW11.jpg" alt="Thermal knit sweater in waffle pattern for superior insulation, lightweight and warm">
+                        </div>
+                        <h3>Thermal Knit Sweater</h3>
+                        <p class="price">$115.00</p>
+                        <p style="padding: 0 20px 20px; flex-grow: 1;">Waffle-knit thermal fabric for superior insulation. Lightweight yet incredibly warm.</p>
+                        <button class="add-to-cart-btn" onclick="addToCart(11)">Add to Cart</button>
+                    </div>
+
+                    <!-- SW12: Quarter-Zip Pullover -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="../Assets/images/SW12.jpg" alt="Quarter-zip pullover with stand-up collar, smart-casual style">
+                        </div>
+                        <h3>Quarter-Zip Pullover</h3>
+                        <p class="price">$135.00</p>
+                        <p style="padding: 0 20px 20px; flex-grow: 1;">Classic quarter-zip collar with stand-up neck. Perfect for smart-casual occasions.</p>
+                        <button class="add-to-cart-btn" onclick="addToCart(12)">Add to Cart</button>
+                    </div>
+
+                    <!-- SW13: Sleeveless Hoodie -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="../Assets/images/SW13.jpg" alt="Gym-ready sleeveless hoodie with hood and side vents for unrestricted movement">
+                        </div>
+                        <h3>Sleeveless Hoodie</h3>
+                        <p class="price">$100.00</p>
+                        <p style="padding: 0 20px 20px; flex-grow: 1;">Gym-ready sleeveless design with hood. Side vents for unrestricted movement.</p>
+                        <button class="add-to-cart-btn" onclick="addToCart(13)">Add to Cart</button>
+                    </div>
+
+                    <!-- SW14: Henley Sweatshirt -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="../Assets/images/SW14.jpg" alt="Henley sweatshirt with three-button placket and ribbed collar, casual and refined">
+                        </div>
+                        <h3>Henley Sweatshirt</h3>
+                        <p class="price">$105.00</p>
+                        <p style="padding: 0 20px 20px; flex-grow: 1;">Three-button Henley placket with ribbed collar. Casual yet refined aesthetic.</p>
+                        <button class="add-to-cart-btn" onclick="addToCart(14)">Add to Cart</button>
+                    </div>
+
+                    <!-- SW15: Hooded Cardigan -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="../Assets/images/SW15.jpg" alt="Open-front hooded cardigan with draped silhouette, elegant layering piece">
+                        </div>
+                        <h3>Hooded Cardigan</h3>
+                        <p class="price">$140.00</p>
+                        <p style="padding: 0 20px 20px; flex-grow: 1;">Open-front cardigan with attached hood. Draped silhouette for elegant layering.</p>
+                        <button class="add-to-cart-btn" onclick="addToCart(15)">Add to Cart</button>
+                    </div>
+
+                    <!-- SW16: Pocket Front Sweatshirt -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="../Assets/images/SW16.jpg" alt="Oversized sweatshirt with full front kangaroo pocket, ideal for lounging">
+                        </div>
+                        <h3>Pocket Front Sweatshirt</h3>
+                        <p class="price">$125.00</p>
+                        <p style="padding: 0 20px 20px; flex-grow: 1;">Oversized kangaroo pocket spans entire front. Perfect for lounging.</p>
+                        <button class="add-to-cart-btn" onclick="addToCart(16)">Add to Cart</button>
+                    </div>
+
+                    <!-- SW17: Colorblock Hoodie -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="../Assets/images/SW17.jpg" alt="Colorblock hoodie with bold two-tone design and ribbed contrast panels">
+                        </div>
+                        <h3>Colorblock Hoodie</h3>
+                        <p class="price">$130.00</p>
+                        <p style="padding: 0 20px 20px; flex-grow: 1;">Bold two-tone colorblock design. Ribbed contrast panels for visual interest.</p>
+                        <button class="add-to-cart-btn" onclick="addToCart(17)">Add to Cart</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2024 Chica Wear Sweatshirts | Student ID: 2409037</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

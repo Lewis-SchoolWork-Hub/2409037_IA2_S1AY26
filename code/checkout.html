@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Chica Wear Sweatshirts</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <header id="main-header" class="header">
+        <div class="container">
+            <h1 class="brand">Chica Wear Sweatshirts</h1>
+            <nav class="main-nav">
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="checkout-section">
+            <div class="container">
+                <h2 class="section-title">Checkout</h2>
+                <div class="checkout-grid">
+                    <div class="checkout-form">
+                        <h3>Shipping Details</h3>
+                        <form id="checkout-form" onsubmit="return handleCheckout(event)">
+                            <div class="form-group">
+                                <label for="ship-name">Full Name:</label>
+                                <input type="text" id="ship-name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="ship-address">Address:</label>
+                                <textarea id="ship-address" rows="3" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="ship-city">City:</label>
+                                <input type="text" id="ship-city" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="ship-zip">ZIP Code:</label>
+                                <input type="text" id="ship-zip" required>
+                            </div>
+                            <div class="payment-method">
+                                <label>Payment Method:</label>
+                                <label><input type="radio" name="payment" value="cod" required> Cash on Delivery</label>
+                                <label><input type="radio" name="payment" value="card" required> Credit Card</label>
+                            </div>
+                            <button type="submit" class="cta-primary">Confirm Order</button>
+                            <button type="button" onclick="cancelCheckout()" class="cta-secondary">Cancel</button>
+                        </form>
+                    </div>
+                    <div class="order-summary">
+                        <h3>Order Summary</h3>
+                        <div id="checkout-items" class="checkout-items">
+                            <!-- Items will be inserted here -->
+                        </div>
+                        <div class="summary-row">
+                            <span>Subtotal:</span>
+                            <span id="checkout-subtotal">$0.00</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Tax (10%):</span>
+                            <span id="checkout-tax">$0.00</span>
+                        </div>
+                        <div class="summary-row total">
+                            <span>Total:</span>
+                            <span id="checkout-total">$0.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2024 Chica Wear Sweatshirts | Student ID: 2409037</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
